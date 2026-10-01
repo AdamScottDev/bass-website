@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/css/styles.css">
-<script>document.documentElement.className="js"</script>
+<script>var r=document.documentElement;r.className="js";try{r.dataset.theme=localStorage.getItem("bass-theme")||"dark"}catch(e){r.dataset.theme="dark"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Brisbane Autism Social Society", "alternateName": "BASS", "url": "https://bassbrisbane.com/", "description": "Brisbane Autism Social Society (BASS) is a friendly social community for autistic, AuDHD and neurodivergent adults in Brisbane and South East Queensland.", "areaServed": {"@type": "City", "name": "Brisbane"}}</script>
 </head>
 <body>
@@ -23,7 +23,7 @@
 <header class="site-header"><div class="wrap bar">
 <a class="brand" href="/">BASS<span> Brisbane Autism Social Society</span></a>
 <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
-<nav id="nav" class="nav" aria-label="Main"><ul><li><a href="/" aria-current="page">Home</a></li><li><a href="/autism-groups-brisbane/">Autism groups</a></li><li><a href="/autism-groups-adults-brisbane/">Adult groups</a></li><li><a href="/events/">Events</a></li><li><a href="/about/">About</a></li><li><a href="/resources/">Resources</a></li><li><a class="btn" href="/contact/">Join</a></li></ul></nav>
+<nav id="nav" class="nav" aria-label="Main"><ul><li><a href="/" aria-current="page">Home</a></li><li><a href="/autism-groups-brisbane/">Autism groups</a></li><li><a href="/autism-groups-adults-brisbane/">Adult groups</a></li><li><a href="/events/">Events</a></li><li><a href="/about/">About</a></li><li><a href="/resources/">Resources</a></li><li><a class="btn" href="/contact/">Join</a></li><li><button type="button" class="theme-btn">Light mode</button></li></ul></nav>
 </div></header>
 <main id="main">
 

@@ -7,7 +7,7 @@ A plain static website: just HTML, CSS and one small JavaScript file. No build s
 - Search the whole project for `TO BE ADDED` to find every placeholder. They show as yellow highlights on the page.
 - Replace the `#` in `contact/index.html` (the Join button) with your real join link. The other Join buttons point to the Contact page.
 - The menu and footer are repeated on each page. If you change one, change it on all 7 pages.
-- Colours and fonts live at the top of `assets/css/styles.css`.
+- Colours live at the top of `assets/css/styles.css`. The site is dark by default, with a Light mode button in the menu (`assets/js/main.js` remembers the choice).
 
 ## Previewing on your computer
 Links start with `/`, so open a terminal in this folder and run `python3 -m http.server 8000`, then visit http://localhost:8000
