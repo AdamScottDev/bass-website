@@ -18,7 +18,7 @@ jobs:
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_FORUM_CHANNEL_ID: "1460246806247112890"
-          APPROVAL_TAG_NAME: "Share on website"
+          APPROVAL_TAG_NAME: "Shared on website"
       - name: Save changes
         run: |
           git config user.name "bass-website-bot"
