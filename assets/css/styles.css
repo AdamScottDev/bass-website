@@ -77,6 +77,17 @@ a:hover{text-decoration-thickness:.16em}
 .steps li::before{content:counter(s);position:absolute;left:0;top:.05em;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--btn);color:var(--btn-t);font-weight:700;display:flex;align-items:center;justify-content:center}
 .event{padding:1.25rem 1.5rem;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);margin-bottom:1rem}
 .event dl{margin:0 0 1rem}.event dt{font-weight:700}.event dd{margin:0 0 .6rem}
+.luma-frame{display:block;width:100%;height:42rem;margin:0 0 1rem;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.posts-toggle{display:none}.js .posts-toggle{display:inline-flex}
+[hidden]{display:none!important}
+.post-grid{display:grid;gap:var(--gap);grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr))}
+.post-card{display:flex;flex-direction:column;align-items:flex-start;padding:1.25rem 1.5rem;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.post-meta{font-weight:700;margin-bottom:.5rem}
+.tag-list{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:0;margin:0 0 .75rem;max-width:none}
+.tag-list li{margin:0;padding:.1rem .7rem;font-size:1rem;background:var(--lav);border:1px solid var(--line);border-radius:999px}
+.post-text{white-space:pre-line;margin-bottom:.75rem}
+.post-text.clamp{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.post-card .more{margin:0;margin-top:auto}
 .join-band{padding:2rem 0}
 .join-band .wrap{padding:2rem;background:var(--soft);border:1px solid var(--line);border-radius:var(--r);width:calc(100% - 2.5rem)}
 .ph{background:var(--ph);color:var(--ph-t);padding:.1em .45em;border-radius:6px;border:1px dashed var(--ph-t)}
