@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /account/
-Disallow: /admin/
-
-Sitemap: https://bassbrisbane.com/sitemap.xml
