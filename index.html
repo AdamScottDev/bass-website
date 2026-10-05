@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#1E222A">
+<title>Autism and Neurodivergent Social Group Brisbane | BASS</title>
+<meta name="description" content="BASS is a social community for autistic, ADHD and neurodivergent adults in Brisbane. Meet people, make friends and join in at your own pace on Discord.">
+<link rel="canonical" href="https://bassbrisbane.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BASS – Brisbane Autism Social Space">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Autism and Neurodivergent Social Group Brisbane | BASS">
+<meta property="og:description" content="A social community for autistic, ADHD and neurodivergent adults in Brisbane. Meet people, make friends and join in at your own pace.">
+<meta property="og:url" content="https://bassbrisbane.com/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* All colours and sizes are variables here. Change them once and the page updates. */
+@font-face{font-family:"Atkinson Hyperlegible";src:url(/assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible";src:url(/assets/fonts/atkinson-hyperlegible-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+:root{--bg:#1E222A;--card:#282D37;--text:#E2E6EA;--muted:#7A8D9B;--link:#8CA38E;--btn:#9BB2C5;--btn-h:#E2E6EA;--btn-t:#1E222A;--line:#3A4150;--edge:#7A8D9B;--focus:#E2E6EA;--ring:#1E222A;--r:16px;--font:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color-scheme:dark}
+:root[data-contrast=more]{--bg:#000;--card:#000;--text:#fff;--muted:#fff;--link:#a9dcae;--btn:#fff;--btn-h:#d9d9d9;--btn-t:#000;--line:#fff;--edge:#fff;--focus:#ffdd00;--ring:#000}
+*,::before,::after{box-sizing:border-box}
+html{font-size:100%}
+html[data-size=large]{font-size:125%}
+body{margin:0;font:1.125rem/1.7 var(--font);color:var(--text);background:var(--bg);overflow-wrap:break-word}
+.w{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{line-height:1.25;margin:0 0 .6em}
+h1{font-size:clamp(2rem,6vw,2.9rem)}
+h2{font-size:clamp(1.5rem,4vw,2rem)}
+h3{font-size:1.2rem;margin-bottom:.3em}
+p,ul,ol{margin:0 0 1em;max-width:38rem}
+a{color:var(--link);text-underline-offset:.18em}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;box-shadow:0 0 0 6px var(--ring)}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:1rem;top:1rem;z-index:9;background:var(--card);color:var(--text);padding:.75rem 1.25rem;border:2px solid var(--text);border-radius:var(--r)}
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem;padding-top:1rem;padding-bottom:.75rem}
+.brand{margin-right:auto;font-weight:700;font-size:1.4rem;line-height:1.2;color:var(--text);text-decoration:none}
+.brand small{display:block;font-weight:400;font-size:1rem;color:var(--muted)}
+.sub{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.5rem 1rem;width:100%}
+.sub a,.a11y summary{display:inline-flex;align-items:center;min-height:44px;padding:.3rem 1rem;border-radius:var(--r);color:var(--text)}
+.sub a[aria-current]{font-weight:700;text-decoration:underline;text-underline-offset:.3em}
+.a11y{display:none}.js .a11y{display:block}
+.a11y summary{border:2px solid var(--edge);cursor:pointer;font-weight:700;list-style:none}
+.a11y summary::-webkit-details-marker{display:none}
+.a11y div{padding:.5rem 0}
+.opt{min-height:44px;margin:.25rem .25rem .25rem 0;padding:.3rem 1rem;font:inherit;color:var(--text);background:var(--bg);border:2px solid var(--edge);border-radius:var(--r);cursor:pointer}
+.opt:hover{background:var(--card)}
+.opt[aria-pressed=true]{border-color:var(--text);font-weight:700}
+.opt[aria-pressed=true]::before{content:"\2713\00a0"}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.65rem 1.5rem;background:var(--btn);color:var(--btn-t);border:2px solid var(--btn);border-radius:var(--r);font:700 1.125rem var(--font);text-decoration:none;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--btn-h);border-color:var(--btn-h)}
+.btn:active{transform:translateY(1px)}
+.big{min-height:56px;padding:.8rem 2rem;font-size:1.25rem}
+section{padding:2rem 0}
+.hero{display:grid;gap:2rem;padding:2.5rem 0 1.5rem}
+.hero h1{max-width:20ch}
+.lead{font-size:1.3rem}
+.note{font-size:1rem;color:var(--muted)}
+.card{padding:1.25rem 1.5rem;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--link);border-radius:var(--r)}
+.card ul{margin:0;padding-left:1.25rem}
+.band{background:var(--card);border-block:1px solid var(--line)}
+.do{display:grid;gap:1rem 2rem;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));margin-bottom:1.5rem}
+.do div{padding-left:1rem;border-left:4px solid var(--link)}
+.do p{margin:0}
+.steps{padding-left:1.5rem}
+.steps li{padding-left:.4rem;margin-bottom:.6em}
+details.q{border:1px solid var(--line);border-radius:var(--r);background:var(--card);margin-bottom:.75rem;max-width:42rem}
+details.q summary{cursor:pointer;font-weight:700;padding:.9rem 1.25rem;min-height:48px}
+details.q p{padding:0 1.25rem;margin:0 0 1em}
+footer{padding:1.5rem 0 3rem;border-top:1px solid var(--line);font-size:1rem}
+@media(min-width:48rem){.hero{grid-template-columns:1.3fr 1fr;align-items:start}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+html[data-motion=reduce] *{transition:none!important;animation:none!important}
+</style>
+<script>
+(function(){var d=document.documentElement,K="bass-a11y",s={};d.className="js";
+try{s=JSON.parse(localStorage.getItem(K))||{}}catch(e){}
+function def(){if(s.contrast==null&&matchMedia("(prefers-contrast: more)").matches)s.contrast=1}
+function set(){d.dataset.size=s.size?"large":"";d.dataset.contrast=s.contrast?"more":"";d.dataset.motion=s.motion?"reduce":""}
+function save(){try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}}
+def();set();
+document.addEventListener("DOMContentLoaded",function(){
+var b=document.querySelectorAll("[data-k]");
+function mark(){b.forEach(function(x){x.setAttribute("aria-pressed",!!s[x.dataset.k])})}
+b.forEach(function(x){x.onclick=function(){s[x.dataset.k]=!s[x.dataset.k];set();save();mark()}});
+document.getElementById("reset").onclick=function(){s={};try{localStorage.removeItem(K)}catch(e){}def();set();mark()};
+mark()})})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://bassbrisbane.com/#org","name":"Brisbane Autism Social Space","alternateName":"BASS","url":"https://bassbrisbane.com/","description":"A social community for autistic, ADHD and neurodivergent adults in Brisbane, Queensland, Australia.","areaServed":{"@type":"City","name":"Brisbane","containedInPlace":{"@type":"AdministrativeArea","name":"Queensland, Australia"}}},{"@type":"WebSite","@id":"https://bassbrisbane.com/#site","url":"https://bassbrisbane.com/","name":"BASS – Brisbane Autism Social Space","inLanguage":"en-AU","publisher":{"@id":"https://bassbrisbane.com/#org"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is BASS only for autistic people?","acceptedAnswer":{"@type":"Answer","text":"No. BASS is for autistic, ADHD, AuDHD and other neurodivergent adults in Brisbane."}},{"@type":"Question","name":"Is BASS for adults?","acceptedAnswer":{"@type":"Answer","text":"Yes. BASS is a community for adults."}},{"@type":"Question","name":"Where is BASS located?","acceptedAnswer":{"@type":"Answer","text":"BASS is based in Brisbane, Queensland, Australia. Our social events are in Brisbane and our online community is on Discord."}},{"@type":"Question","name":"Do I need to be good at socialising?","acceptedAnswer":{"@type":"Answer","text":"No. You do not need to be outgoing or good at small talk. You can take things at your own pace."}},{"@type":"Question","name":"Do I have to attend in-person events?","acceptedAnswer":{"@type":"Answer","text":"No. You can join the Discord and chat online. Events are there if and when you want to come along."}},{"@type":"Question","name":"How do I join BASS?","acceptedAnswer":{"@type":"Answer","text":"Select Join the BASS Discord and follow the prompts. You need a Discord account, which is free to create."}}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header><div class="w bar">
+<a class="brand" href="/">BASS <small>Brisbane Autism Social Space</small></a>
+<a class="btn" href="https://discord.gg/QpfH5bfpbb">Join the BASS Discord</a>
+<div class="sub">
+<nav aria-label="Main"><a href="/" aria-current="page">Home</a></nav>
+<details class="a11y"><summary>Accessibility</summary><div role="group" aria-label="Accessibility settings"><button type="button" class="opt" data-k="size" aria-pressed="false">Larger text</button><button type="button" class="opt" data-k="contrast" aria-pressed="false">Higher contrast</button><button type="button" class="opt" data-k="motion" aria-pressed="false">Reduce motion</button><button type="button" class="opt" id="reset">Reset</button></div></details>
+</div>
+</div></header>
+<main id="main">
+<div class="w hero">
+<div>
+<h1>A social community for neurodivergent adults in Brisbane</h1>
+<p class="lead">Meet people, make friends and be part of a community where you can socialise at your own pace. BASS is for autistic, ADHD, AuDHD and other neurodivergent adults in Brisbane, Queensland.</p>
+<p><a class="btn big" href="https://discord.gg/QpfH5bfpbb">Join the BASS Discord</a></p>
+<p class="note">This takes you to our community on Discord. You need a free Discord account.</p>
+</div>
+<div class="card"><h2 style="font-size:1.3rem">You don't have to</h2>
+<ul><li>Be outgoing</li><li>Enjoy small talk</li><li>Make friends straight away</li><li>Come to every event</li><li>Be socially confident</li></ul></div>
+</div>
+<section><div class="w">
+<h2>What is BASS?</h2>
+<p>BASS (Brisbane Autism Social Space) is an autism and neurodivergent social group for adults in Brisbane. We run relaxed social events and an online community where you can chat, share your interests and gradually get to know people.</p>
+<p>Making friends isn't always easy. Some people need more time to feel comfortable around others. Some find traditional social groups overwhelming or hard to navigate. Others haven't found the right people yet.</p>
+<p>BASS is designed to make socialising easier. Our goal is simple: to help neurodivergent adults in Brisbane find their people.</p>
+</div></section>
+<section class="band"><div class="w">
+<h2>Who is BASS for?</h2>
+<ul><li>Autistic adults</li><li>Adults with ADHD or AuDHD</li><li>Other neurodivergent adults</li><li>People in Brisbane and South East Queensland</li></ul>
+<p>BASS is a community for adults. It is not a clinic, a therapy service or an NDIS provider.</p>
+</div></section>
+<section><div class="w">
+<h2>What you can do at BASS</h2>
+<div class="do">
+<div><h3>Chat online</h3><p>Talk with other neurodivergent adults in the BASS Discord.</p></div>
+<div><h3>Meet people</h3><p>Find people with similar interests and get to know them over time.</p></div>
+<div><h3>Join activities</h3><p>Take part in relaxed social activities, games, hobbies and community events.</p></div>
+<div><h3>Go at your own pace</h3><p>Look around first. Join in when you feel ready.</p></div>
+</div>
+<p><a class="btn" href="https://discord.gg/QpfH5bfpbb">Join the BASS Discord</a></p>
+</div></section>
+<section class="band"><div class="w">
+<h2>What makes BASS different?</h2>
+<ul>
+<li><strong>Made for adults.</strong> This is a community for adults, not a youth or family group.</li>
+<li><strong>No social performance.</strong> Nobody expects you to be good at socialising.</li>
+<li><strong>Online and in person.</strong> Start by chatting online. Events are optional.</li>
+<li><strong>A community, not a service.</strong> We don't offer therapy or medical advice. In an emergency, call 000.</li>
+</ul>
+</div></section>
+<section><div class="w">
+<h2>How joining works</h2>
+<ol class="steps">
+<li>Select <strong>Join the BASS Discord</strong>.</li>
+<li>Log in to Discord, or create a free account.</li>
+<li>Follow Discord's prompts to join the community.</li>
+<li>Look around, and say hello when you feel ready.</li>
+</ol>
+</div></section>
+<section><div class="w">
+<h2>Questions about BASS</h2>
+<details class="q"><summary>Is BASS only for autistic people?</summary><p>No. BASS is for autistic, ADHD, AuDHD and other neurodivergent adults in Brisbane.</p></details>
+<details class="q"><summary>Is BASS for adults?</summary><p>Yes. BASS is a community for adults.</p></details>
+<details class="q"><summary>Where is BASS located?</summary><p>BASS is based in Brisbane, Queensland, Australia. Our social events are in Brisbane and our online community is on Discord.</p></details>
+<details class="q"><summary>Do I need to be good at socialising?</summary><p>No. You do not need to be outgoing or good at small talk. You can take things at your own pace.</p></details>
+<details class="q"><summary>Do I have to attend in-person events?</summary><p>No. You can join the Discord and chat online. Events are there if and when you want to come along.</p></details>
+<details class="q"><summary>How do I join BASS?</summary><p>Select Join the BASS Discord and follow the prompts. You need a Discord account, which is free to create.</p></details>
+</div></section>
+<section class="band"><div class="w">
+<h2>Come and see what BASS is like</h2>
+<p>Meet other neurodivergent adults in Brisbane, chat about shared interests and find out what's happening in the community.</p>
+<p><a class="btn big" href="https://discord.gg/QpfH5bfpbb">Join the BASS Discord</a></p>
+</div></section>
+</main>
+<footer><div class="w">
+<p><strong>BASS – Brisbane Autism Social Space</strong><br>A social community for autistic and neurodivergent adults in Brisbane, Queensland, Australia.</p>
+<p>BASS is a community, not a clinical or therapy service. In an emergency, call 000.</p>
+</div></footer>
+</body>
+</html>
